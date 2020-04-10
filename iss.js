@@ -47,7 +47,8 @@ const fetchISSFlyOverTimes = function(coords, callback) {
       return;
     }
     const flybys = JSON.parse(body);
-    console.log(typeof flybys, flybys.response);
+    // console.log(typeof flybys, flybys.response);
+    callback(null, flybys.response)
   });
 };
 
